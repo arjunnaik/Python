@@ -1,0 +1,9 @@
+def rec(l):
+    if len(l)==1:
+        return l[0]
+    else:
+        v = l[-1]
+        l.pop()
+        return v+rec(l)
+        
+print(rec([1,2,5,8,10,55]))
